@@ -4,8 +4,10 @@ class Player
 public:
 	Player();
 	~Player();
+	int** setPosition(int**);
 	int getX();
 	int getY();
-	void move(int, int, int**);
+	int** move(int, int, int**);
+	void randGenerator();
 };
 
