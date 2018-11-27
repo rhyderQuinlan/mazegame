@@ -1,13 +1,15 @@
 #pragma once
-class Player 
+class Player
 {
 public:
 	Player();
 	~Player();
-	int** setPosition(int**);
+	int** p_spawn(int**);
 	int getX();
 	int getY();
 	int** move(int, int, int**);
 	void randGenerator();
+	void minusLife();
+	int getLives();
 };
 
